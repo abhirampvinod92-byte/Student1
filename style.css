@@ -1,0 +1,19 @@
+body{
+    margin-top: 0;
+    padding: 0;
+}
+.img-test{
+    height: 400px;
+    width: auto;
+}
+.wde{
+    height: 200px ;
+    width: auto;
+}
+.text{
+    height: 150px;
+    width: auto;
+}
+.tt{
+    border: 4px dotted;
+}
