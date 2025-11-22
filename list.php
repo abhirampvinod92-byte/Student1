@@ -1,7 +1,6 @@
 <?php
 include "db.php";
-if(!isset($_SESSION['admin'])){ header("Location: login.php"); exit; }
-
+session_start();
 $result = mysqli_query($conn, "SELECT * FROM student");
 ?>
 <!DOCTYPE html>
@@ -78,3 +77,4 @@ $result = mysqli_query($conn, "SELECT * FROM student");
 
 </body>
 </html>
+
