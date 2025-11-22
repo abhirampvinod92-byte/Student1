@@ -1,12 +1,11 @@
 <?php
 include "db.php";
-if(!isset($_SESSION['admin'])){ header("Location: login.php"); exit; }
-
+session_start();
 $name  = $_POST['name'];
 $age   = $_POST['age'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO student (name, age, email) VALUES ('$name','$age','$email')";
+$sql = "INSERT INTO student1 (name, age, email) VALUES ('$name','$age','$email')";
 
 if(mysqli_query($conn, $sql)){
     // Redirect with success message
@@ -17,4 +16,5 @@ if(mysqli_query($conn, $sql)){
     exit;
 }
 ?>
+
 
